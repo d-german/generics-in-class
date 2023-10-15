@@ -7,14 +7,16 @@ public class ArrayUtilitiesTests
     public void Test_IsNullOrEmpty_ArrayIsNull()
     {
         int[]? array = null;
-        Assert.That(array.IsNullOrEmpty(), Is.True);
+        // TODO: Update this line to use the IsNullOrEmpty extension method directly on the array variable.
+        Assert.That(ArrayUtilities.IsNullOrEmpty(array), Is.True); 
     }
 
     [Test]
     public void Test_IsNullOrEmpty_ArrayIsEmpty()
     {
         var array = Array.Empty<int>();
-        Assert.That(array.IsNullOrEmpty(), Is.True);
+        // TODO: Update this line to use the IsNullOrEmpty extension method directly on the array variable.
+        Assert.That(ArrayUtilities.IsNullOrEmpty(array), Is.True);
     }
 
     [Test]
@@ -24,6 +26,7 @@ public class ArrayUtilitiesTests
         {
             1, 2, 3
         };
-        Assert.That(array.IsNullOrEmpty(), Is.False);
+        // TODO: Update this line to use the IsNullOrEmpty extension method directly on the array variable.
+        Assert.That(ArrayUtilities.IsNullOrEmpty(array), Is.False);
     }
 }
